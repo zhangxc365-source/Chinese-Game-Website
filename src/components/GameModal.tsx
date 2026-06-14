@@ -2,6 +2,7 @@ import { Game } from '../types';
 import LucideIcon from './LucideIcon';
 import { motion, AnimatePresence } from 'motion/react';
 import React, { useEffect, useState } from 'react';
+import { getImage } from '../dbHelper';
 
 interface GameModalProps {
   game: Game | null;
@@ -22,6 +23,7 @@ export default function GameModal({
 }: GameModalProps) {
   const [imageLoaded, setImageLoaded] = useState(false);
   const [imageError, setImageError] = useState(false);
+  const [displayImg, setDisplayImg] = useState('');
 
   // Stop body scroll when modal is open
   useEffect(() => {
@@ -34,6 +36,33 @@ export default function GameModal({
       document.body.style.overflow = 'unset';
     };
   }, [isOpen]);
+
+  useEffect(() => {
+    if (!game) return;
+    setImageLoaded(false);
+    setImageError(false);
+    
+    let active = true;
+    getImage(game.id)
+      .then((savedImg) => {
+        if (!active) return;
+        if (savedImg) {
+          setDisplayImg(savedImg);
+        } else {
+          setDisplayImg(game.img);
+        }
+      })
+      .catch((err) => {
+        console.error("Failed to query IndexedDB from modal:", err);
+        if (active) {
+          setDisplayImg(game.img);
+        }
+      });
+      
+    return () => {
+      active = false;
+    };
+  }, [game]);
 
   if (!game) return null;
 
@@ -74,7 +103,7 @@ export default function GameModal({
 
               {!imageError && (
                 <img
-                  src={game.img}
+                  src={displayImg || game.img}
                   alt={game.title}
                   onLoad={() => setImageLoaded(true)}
                   onError={() => setImageError(true)}

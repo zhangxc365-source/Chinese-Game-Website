@@ -160,6 +160,34 @@ export default function GameCard({ game, categoryName, onSelect }: GameCardProps
           } group-hover:scale-105 transition-transform duration-500 ease-out`}
         />
 
+        {/* Real-time image customization controls on hover */}
+        <div 
+          onClick={(e) => e.stopPropagation()} 
+          className="absolute top-3 right-3 z-30 opacity-0 group-hover:opacity-100 transition-opacity duration-200 flex gap-2"
+        >
+          <label 
+            className="p-2 rounded-xl bg-white/95 hover:bg-white text-slate-700 shadow-md cursor-pointer transition-all border border-slate-200/50 flex items-center justify-center hover:scale-105" 
+            title="上传自定义封面图片"
+          >
+            <LucideIcon name="Camera" size={15} />
+            <input 
+              type="file" 
+              accept="image/*" 
+              onChange={handleImageUpload} 
+              className="hidden" 
+            />
+          </label>
+          {isCustomized && (
+            <button
+              onClick={handleResetImage}
+              className="p-2 rounded-xl bg-red-500 hover:bg-red-600 text-white shadow-md transition-all border border-transparent flex items-center justify-center hover:scale-105"
+              title="重置为默认封面图片"
+            >
+              <LucideIcon name="RotateCcw" size={15} className="text-white" />
+            </button>
+          )}
+        </div>
+
         {/* Floating Badges */}
         <div className="absolute top-3 left-3 z-20 flex gap-1.5 flex-wrap">
           <span className="px-2.5 py-0.5 rounded-full text-[12px] font-medium tracking-wide bg-white/95 backdrop-blur-md text-slate-700 shadow-sm border border-slate-100">

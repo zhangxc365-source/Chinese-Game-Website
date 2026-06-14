@@ -135,7 +135,7 @@ export default function App() {
                       <GameCard
                         game={game}
                         categoryName={category}
-                        onSelect={() => setSelectedGame(game)}
+                        onSelect={() => window.open(game.url, '_blank')}
                       />
                     </div>
                   ))}
@@ -192,7 +192,7 @@ export default function App() {
                           <GameCard
                             game={game}
                             categoryName={group.category}
-                            onSelect={() => setSelectedGame(game)}
+                            onSelect={() => window.open(game.url, '_blank')}
                           />
                         </div>
                       ))}

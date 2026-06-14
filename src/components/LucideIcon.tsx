@@ -30,7 +30,8 @@ import {
   TrendingUp,
   Sliders,
   ChevronDown,
-  ArrowRight
+  ArrowRight,
+  Camera
 } from 'lucide-react';
 
 const iconMap: Record<string, React.ComponentType<{ className?: string; size?: number }>> = {
@@ -64,7 +65,8 @@ const iconMap: Record<string, React.ComponentType<{ className?: string; size?: n
   TrendingUp,
   Sliders,
   ChevronDown,
-  ArrowRight
+  ArrowRight,
+  Camera
 };
 
 interface LucideIconProps {
