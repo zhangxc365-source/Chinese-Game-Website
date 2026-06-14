@@ -7,7 +7,7 @@ export const INITIAL_GAMES_DATA: CategoryGroup[] = [
       {
         id: "pinyin-1",
         title: "口语炸弹",
-        img: "https://images.unsplash.com/photo-1546776310-eef45dd6d63c?w=400&auto=format&fit=crop&q=80",
+        img: "./images/口语炸弹.png",
         url: "https://zhangxc365-source.github.io/speaking-bomb/",
         description: "紧张刺激的口语对抗！在炸弹引爆之前，快速准确地大声朗读出汉字词句。",
         difficulty: "挑战",
@@ -32,7 +32,7 @@ export const INITIAL_GAMES_DATA: CategoryGroup[] = [
       {
         id: "pinyin-2",
         title: "拼音狙击手",
-        img: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?w=400&auto=format&fit=crop&q=80",
+        img: "./images/拼音狙击手.png",
         url: "https://zhangxc365-source.github.io/pinyin-sniper/",
         description: "化身狙击精英，听音辨符！在纷至沓来的拼音标靶中快速锁定击中正确的目标。",
         difficulty: "普通",
@@ -57,7 +57,7 @@ export const INITIAL_GAMES_DATA: CategoryGroup[] = [
       {
         id: "pinyin-3",
         title: "音调飞行员",
-        img: "https://images.unsplash.com/photo-1484704849700-f032a568e944?w=400&auto=format&fit=crop&q=80",
+        img: "./images/音调飞行员.png",
         url: "https://zhangxc365-source.github.io/tone-pilot/",
         description: "跟随声调曲线起伏波澜！操控滑翔动力艇，搜集天空中隐藏的元音音标星章。",
         difficulty: "普通",
@@ -87,7 +87,7 @@ export const INITIAL_GAMES_DATA: CategoryGroup[] = [
       {
         id: "vocab-1",
         title: "单词连连看",
-        img: "https://images.unsplash.com/photo-1555685812-4b943f1cb0eb?w=400&auto=format&fit=crop&q=80",
+        img: "./images/单词连连看.png",
         url: "https://zhangxc365-source.github.io/Triple-match-up/",
         description: "展现极致的词汇三消眼力！在立体格盘寻找并匹配相符主题的汉语词汇卡。",
         difficulty: "普通",
@@ -112,7 +112,7 @@ export const INITIAL_GAMES_DATA: CategoryGroup[] = [
       {
         id: "vocab-2",
         title: "超市大搜索",
-        img: "https://images.unsplash.com/photo-1579380656108-f98e4df8ea62?w=400&auto=format&fit=crop&q=80",
+        img: "./images/超市大搜索.png",
         url: "https://zhangxc365-source.github.io/supermarket-sweep/",
         description: "按照购物车提供的词类清单，在闹哄哄的货物字海中极速翻查并拖入对应字词卡。",
         difficulty: "挑战",
@@ -137,7 +137,7 @@ export const INITIAL_GAMES_DATA: CategoryGroup[] = [
       {
         id: "vocab-3",
         title: "词汇大师",
-        img: "https://images.unsplash.com/photo-1513151233558-d860c5398176?w=400&auto=format&fit=crop&q=80",
+        img: "./images/词汇大师.png",
         url: "https://zhangxc365-source.github.io/Vocabulary-master/",
         description: "高维度的中华词语奥林匹克考验！通过层层释义选择与逻辑判断，冲击词圣王座。",
         difficulty: "挑战",
@@ -167,7 +167,7 @@ export const INITIAL_GAMES_DATA: CategoryGroup[] = [
       {
         id: "grammar-1",
         title: "句子修理厂",
-        img: "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=400&auto=format&fit=crop&q=80",
+        img: "./images/句子修理厂.png",
         url: "https://zhangxc365-source.github.io/sentence-repair-shop/",
         description: "校准病句，对调颠倒的主谓宾！拖拽、置换残存组件让破碎句子重获通顺表达。",
         difficulty: "挑战",
@@ -192,7 +192,7 @@ export const INITIAL_GAMES_DATA: CategoryGroup[] = [
       {
         id: "grammar-2",
         title: "语法拔河赛",
-        img: "https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=400&auto=format&fit=crop&q=80",
+        img: "./images/语法拔河赛.png",
         url: "https://zhangxc365-source.github.io/grammar-tug-of-war/",
         description: "在文字阵营的拉锯对抗中，急速连词造句，用完美关联能量助己方队伍拔得头筹。",
         difficulty: "挑战",
@@ -217,7 +217,7 @@ export const INITIAL_GAMES_DATA: CategoryGroup[] = [
       {
         id: "grammar-3",
         title: "语法工程师",
-        img: "https://images.unsplash.com/photo-1502082553048-f009c37129b9?w=400&auto=format&fit=crop&q=80",
+        img: "./images/语法工程师.png",
         url: "https://zhangxc365-source.github.io/Grammar-engineer/",
         description: "严丝合缝扣装高塔齿轮！精妙配对主从句结构、嵌套成分以支撑大厦永乐不倒。",
         difficulty: "普通",
@@ -247,7 +247,7 @@ export const INITIAL_GAMES_DATA: CategoryGroup[] = [
       {
         id: "character-1",
         title: "汉字书写五子棋",
-        img: "https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?w=400&auto=format&fit=crop&q=80",
+        img: "./images/汉字书写五子棋.png",
         url: "https://zhangxc365-source.github.io/writing-omok/",
         description: "在国风古韵棋盘一决高下！手写汉字一展风采，唯有笔画笔顺正确的棋子方能行棋合围。",
         difficulty: "挑战",
@@ -272,7 +272,7 @@ export const INITIAL_GAMES_DATA: CategoryGroup[] = [
       {
         id: "character-2",
         title: "汉字拼图王",
-        img: "https://images.unsplash.com/photo-1515462277126-270d878326e5?w=400&auto=format&fit=crop&q=80",
+        img: "./images/汉字拼图王.png",
         url: "https://zhangxc365-source.github.io/character-puzzle-king/",
         description: "摔散的偏旁需要你妙手回春！拼凑合龙、拖拽咬合各形部首以还原精致中文美字。",
         difficulty: "普通",
@@ -297,7 +297,7 @@ export const INITIAL_GAMES_DATA: CategoryGroup[] = [
       {
         id: "character-3",
         title: "汉字找不同",
-        img: "https://images.unsplash.com/photo-1544816155-12df9643f363?w=400&auto=format&fit=crop&q=80",
+        img: "./images/汉字找不同.png",
         url: "https://zhangxc365-source.github.io/The-Odd-One-Out/",
         description: "眼力大比拼！在排山倒海的相似形近汉字阵中，极限狙击那只极其狡黠的越狱错别字。",
         difficulty: "容易",
