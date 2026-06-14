@@ -1,0 +1,6 @@
+{
+  "name": "汉语游戏岛",
+  "description": "一个轻量、淡雅风格的精致小游戏聚合与导游网站，包含语音、词汇、语法和汉字四大分类。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
